@@ -22820,10 +22820,10 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
   }
 }
 .rts-copyright-area-two .copy-right-area-inner-two {
-  padding: 15px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media only screen and (max-width: 767px) {
   .rts-copyright-area-two .copy-right-area-inner-two {
