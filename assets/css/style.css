@@ -15326,6 +15326,7 @@ a {
 @media only screen and (max-width: 575px) {
   .index-two .swiper-banner-two-wrapper .swiper-wrapper .swiper-slide > div {
     height: 570px;
+   width: 105%;
   }
 }
 
