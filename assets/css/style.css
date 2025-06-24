@@ -14414,11 +14414,7 @@ xclip
     padding: 20px 30px !important;
   }
 }
-@media only screen and (max-width: 575px) {
-  .header-three.five.seven .logo-area img {
-    max-width: 120px;
-  }
-}
+
 
 .header-style-two.header--sticky {
   position: absolute;
@@ -14502,37 +14498,8 @@ xclip
   position: relative;
   margin-bottom: -12px;
 }
-.nav-area-center nav ul li::after {
-  position: absolute;
-  content: "01";
-  top: 1px;
-  right: 0;
-  font-size: 12px;
-  color: #30373E;
-  font-weight: 400;
-  transition: 0.3s;
-}
-.nav-area-center nav ul li:nth-child(2)::after {
-  content: "02";
-}
-.nav-area-center nav ul li:nth-child(3)::after {
-  content: "03";
-}
-.nav-area-center nav ul li:nth-child(4)::after {
-  content: "04";
-}
-.nav-area-center nav ul li:nth-child(5)::after {
-  content: "05";
-}
-.nav-area-center nav ul li:nth-child(6)::after {
-  content: "06";
-}
-.nav-area-center nav ul li:nth-child(7)::after {
-  content: "07";
-}
-.nav-area-center nav ul li:nth-child(8)::after {
-  content: "08";
-}
+
+
 .nav-area-center nav ul li a {
   display: block;
   padding: 28px 0 23px 0;
@@ -24004,7 +23971,7 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
   justify-content: center;
 }
 .side-bar .inner-main-wrapper-desk .thumbnail img {
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 .side-bar .inner-main-wrapper-desk .inner-content {
@@ -25411,3 +25378,56 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   margin-left: 10px;
 }
 
+.logs__main{
+  height: 50px; 
+  width: auto;
+}
+.logs__main__footer{
+   height: 100px; 
+  width: auto;
+
+}
+.logs__main__about{
+  height: 70px; 
+  width: auto;
+
+}
+@media (max-width: 768px) {
+  .logs__main {
+    height: 35px; 
+     width: auto;
+
+  }
+  .logs__main__footer{
+   height: 60px; 
+  width: auto;
+}
+.logs__main__about {
+    height: 50px;
+    width: auto;
+}
+}
+
+
+.swiper-banner-thumb-2 .swiper-slide .single-item {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 12px;
+ 
+}
+
+.swiper-banner-thumb-2 .swiper-slide:hover .single-item {
+  transform: scale(1.05);
+  border-color: #e57025; /* gold border */
+  background: #f9f6ef;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.swiper-banner-thumb-2 .swiper-slide-thumb-active .single-item {
+  transform: scale(1.08);
+}
+.swiper-banner-thumb-2 .swiper-slide-thumb-active .title,
+.swiper-banner-thumb-2 .swiper-slide-thumb-active .pre {
+  color: #fff;
+}
