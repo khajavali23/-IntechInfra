@@ -1533,3 +1533,10 @@
     rtsJs.m();
 
 })(jQuery, window)
+
+
+window.addEventListener('scroll', function() {
+    const section = document.querySelector('.team-section');
+    let scrollPosition = window.pageYOffset;
+    section.style.setProperty('--scroll', scrollPosition * 0.5 + 'px');
+ });
