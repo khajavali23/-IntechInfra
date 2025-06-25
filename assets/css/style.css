@@ -52,7 +52,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
 @import url("https://db.onlinewebfonts.com/c/41ef03052040400ec0acd500990fdc97?family=URW+Imperial+W01+Regular");
 :root {
-  --color-primary: #B19777;
+  --color-primary: #e57025;
   --color-secondary: #1F1F25;
   --color-body: #7D7D7D;
   --color-heading-1: #30373E;
@@ -14821,7 +14821,7 @@ a {
   padding-left: 10px;
 }
 .title-left-style-two .pre-title span {
-  color: #B19777;
+  color: #e57025;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -14882,7 +14882,7 @@ a {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  border: 1px solid #B19777;
+  border: 1px solid #ed8d25 ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15260,15 +15260,16 @@ a {
 }
 
 .swiper-banner-two-wrapper .banner-bg-2 {
-  background-image: url(../images/banner/02.jpg);
+  background-image: url(../images/banner/home3.jpg);
   height: 920px;
 }
 .swiper-banner-two-wrapper .banner-bg-3 {
-  background-image: url(../images/banner/19.jpg);
+  background-image: url(../images/banner/home1.jpg);
   height: 920px;
 }
 .swiper-banner-two-wrapper .banner-bg-4 {
-  background-image: url(../images/banner/20.jpg);
+  background-image: url(../images/banner/home2.jpg);
+
   height: 920px;
 }
 @media only screen and (max-width: 767px) {
@@ -15351,10 +15352,16 @@ a {
     line-height: 65px;
   }
 }
+@media (max-width: 767px) {
+  .mobile-break {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 575px) {
   .banner-twoa-rea-start .banner-inner-content-wrapper .title {
     font-size: 30px;
-    line-height: 55px;
+    line-height: 35px;
   }
 }
 .banner-twoa-rea-start .banner-inner-content-wrapper .title span {
@@ -16642,6 +16649,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  display: none;
 }
 .swiper-banner-two-wrapper .thumbs-swiper-main-wrapper-two .swiper-banner-thumb-2 .swiper-wrapper .single-item {
   width: 300px;
@@ -18312,20 +18320,35 @@ a {
   opacity: 0;
   transition: 0.4s;
 }
+
 .single-service-style-three .icon {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .single-service-style-three .icon svg path {
   transition: 0.3s;
 }
 .single-service-style-three a .title {
-  color: #FFF;
+  color: #212728;
   text-align: left;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 34px;
 }
+.single-service-style-three:hover {
+  background: #f8f6f4;
+  
+}
+
+.single-service-style-three .icon,
+.single-service-style-three .icon svg,
+.single-service-style-three .icon svg path {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    fill: #000 !important; /* Test color */
+}
+
 .single-service-style-three p.disc {
   color: #88919B;
   font-size: 16px;
@@ -18340,9 +18363,7 @@ a {
   align-items: center;
   gap: 8px;
 }
-.single-service-style-three:hover {
-  background: rgba(255, 255, 255, 0.02);
-}
+
 .single-service-style-three:hover span {
   opacity: 1;
   right: 30px;
@@ -25372,8 +25393,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 }
 /*# sourceMappingURL=../maps/style.css.map */
 .footer__peragrph{
- 
-      line-height: 1.8;
+   line-height: 1.8;
 }
 .start_project___icon{
   margin-left: 10px;
@@ -25384,13 +25404,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   width: auto;
 }
 .logs__main__footer{
-   height: 100px; 
-  width: auto;
+ width: 200px;
 
 }
 .logs__main__about{
-  height: 70px; 
-  width: auto;
+  width: 200px; 
 
 }
 @media (max-width: 768px) {
@@ -25400,11 +25418,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
   }
   .logs__main__footer{
-   height: 60px; 
+   height: 35px; 
   width: auto;
 }
 .logs__main__about {
-    height: 50px;
+    height: 35px;
     width: auto;
 }
 }
@@ -25582,6 +25600,9 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
     .team-container {
         padding: 30px;
     }
+    .moblike___view__about{
+      display: none;
+    }
 
     .team-heading {
         font-size: 2.2rem;
@@ -25615,4 +25636,10 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
     .team-container {
         padding: 20px;
     }
+}
+
+
+.abbot__rightimg{
+  margin: auto;
+  height: 570px;
 }
