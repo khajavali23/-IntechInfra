@@ -1535,8 +1535,21 @@
 })(jQuery, window)
 
 
-window.addEventListener('scroll', function() {
-    const section = document.querySelector('.team-section');
-    let scrollPosition = window.pageYOffset;
-    section.style.setProperty('--scroll', scrollPosition * 0.5 + 'px');
- });
+
+const currentPage = window.location.pathname.split("/").pop();
+
+// Highlight desktop nav menu
+document.querySelectorAll('.nav-link').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPage) {
+        link.parentElement.classList.add('active');
+    }
+});
+
+// Highlight mobile nav menu
+document.querySelectorAll('#mobile-menu-active .main').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPage) {
+        link.parentElement.classList.add('active');
+    }
+});

@@ -25678,3 +25678,17 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
     margin: auto;
     height: auto;
 }
+
+.parent-ul li.active {
+    border-radius: 5px;
+}
+
+.parent-ul li.active .nav-link {
+    color: #e57126; /* Highlight link color */
+    font-weight: bold;
+}
+#mobile-menu-active li.active a {
+    color: #e57126;
+    font-weight: bold;
+    border-radius: 5px;
+}
