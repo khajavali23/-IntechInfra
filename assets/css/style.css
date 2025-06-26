@@ -17533,8 +17533,8 @@ a {
 .about-inner-two-wrapper .about-in-image img {
   padding-right: 25px;
   padding-top: 25px;
-  border-right: 1px solid #e3e3e3;
-  border-top: 1px solid #e3e3e3;
+  border-right: 1px solid #e57025;
+  border-top: 1px solid #e57025;
 }
 .about-inner-two-wrapper .bottom-image-title {
   position: relative;
@@ -17543,7 +17543,7 @@ a {
 .about-inner-two-wrapper .bottom-image-title span {
   position: absolute;
   min-width: max-content;
-  color: #b19777;
+  color: #e57025;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -17764,9 +17764,13 @@ a {
   font-weight: 700;
   line-height: 58px;
 }
+.service-banncer {
+  background-image: url(../images/banner/servicehome.jpg) !important;
+}
+
 
 .breadcrumb-area-bg {
-  background-image: url(../images/banner/21.jpg);
+  background-image: url(../images/banner/abouthome.jpg);
 }
 .breadcrumb-area-bg .bread-crumb-area-inner {
   text-align: center;
@@ -19598,7 +19602,7 @@ a {
   display: flex;
   align-items: center;
   color: #30373e;
-  font-size: 140px;
+  font-size: 100px;
   font-style: normal;
   font-weight: 800;
   line-height: 140px;
@@ -19622,7 +19626,7 @@ a {
   }
 }
 .main-product-wrapper-two .outer-product-text h2.title-change-one span {
-  font-size: 140px;
+  font-size: 100px;
   font-style: normal;
   font-weight: 800;
   line-height: 44px;
@@ -25201,7 +25205,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   width: 100%;
 }
 .contact-info-area-start .contact-info-mid .single-information span {
-  flex-basis: 30%;
+ 
   color: var(--color-primary);
 }
 .contact-info-area-start .contact-info-mid .single-information a {
@@ -25642,4 +25646,35 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 .abbot__rightimg{
   margin: auto;
   height: 570px;
+}
+
+
+.service__list {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  padding: 8px 0; 
+  font-size: 16px;
+  color: #333;
+}
+.service__list img {
+  width: 30px;
+  height: 30px;
+}
+
+.service__list__ul{
+    display: flex;
+    justify-content: space-between;
+}
+.ul_designining{
+  padding: 0px !important;
+}
+.single-brand img:hover {
+  transform: none !important;
+  filter: none !important;
+}
+.whychose__icon{
+    width: 40px;
+    margin: auto;
+    height: auto;
 }
