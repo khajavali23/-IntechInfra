@@ -21704,7 +21704,7 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
   content: "";
   position: absolute;
   width: 519px;
-  height: 319px;
+  height: 380px;
   border: 1px solid #1E1F22;
   z-index: -1;
   left: 130px;
@@ -21727,7 +21727,7 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
   }
 }
 .blog-style-three .body-information {
-  padding: 30px;
+  padding: 20px;
 }
 @media only screen and (max-width: 767px) {
   .blog-style-three .body-information {
@@ -21895,7 +21895,7 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
   border: 1px solid #E3E3E3;
 }
 .blog-style-three.when-bg-white .body-information .blog-top .tag {
-  color: #B19777;
+  color: #e57025;
 }
 .blog-style-three.when-bg-white .body-information .title {
   color: #30373E;
@@ -23540,12 +23540,13 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
 }
 
 .single-choose-style-two {
-  display: flex;
-  align-items: flex-start;
-  gap: 19px;
-  padding: 24px;
-  border: 1px solid #E3E3E3;
-  transition: 0.4s;
+    display: flex;
+  
+    gap: 19px;
+    padding: 20px;
+    border: 1px solid #E3E3E3;
+    transition: 0.4s;
+    border-radius: 10px;
 }
 @media only screen and (max-width: 479px) {
   .single-choose-style-two {
@@ -23560,8 +23561,7 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 .single-choose-style-two .right-content p.disc {
   color: #7D7D7D;
@@ -25626,6 +25626,15 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
         padding: 12px 30px;
         font-size: 1rem;
     }
+    .contact__page{
+  display: flex; 
+  justify-content: flex-start !important;
+
+
+}
+.conatct_-detsials{
+  margin-bottom: 60px !important;
+}
 }
 
 @media (max-width: 480px) {
@@ -25691,4 +25700,16 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
     color: #e57126;
     font-weight: bold;
     border-radius: 5px;
+}
+.service__image{
+  height: 34vh;
+  object-fit: cover;
+}
+.coantca__para{
+  margin-bottom: -14px !important;
+}
+.contact__page{
+  display: flex; 
+  justify-content: center;
+
 }
