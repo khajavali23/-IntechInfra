@@ -19613,7 +19613,7 @@ a {
 .main-product-wrapper-two .outer-product-text h2.title-change-one {
   display: flex;
   align-items: center;
-  color: #30373e;
+  color: #f8f2e8;
   font-size: 100px;
   font-style: normal;
   font-weight: 800;
@@ -19634,18 +19634,19 @@ a {
 }
 @media only screen and (max-width: 575px) {
   .main-product-wrapper-two .outer-product-text h2.title-change-one {
-    font-size: 36px;
+    font-size: 22px;
+    font-weight: 100;
   }
 }
 .main-product-wrapper-two .outer-product-text h2.title-change-one span {
   font-size: 100px;
   font-style: normal;
-  font-weight: 800;
   line-height: 44px;
   text-transform: capitalize;
   -webkit-text-stroke: 1px;
   color: transparent;
-  -webkit-text-stroke-color: #30373e;
+  -webkit-text-stroke-color: #f8f2e8;
+  font-size: 70px;
 }
 @media only screen and (max-width: 1199px) {
   .main-product-wrapper-two .outer-product-text h2.title-change-one span {
@@ -19659,7 +19660,7 @@ a {
 }
 @media only screen and (max-width: 575px) {
   .main-product-wrapper-two .outer-product-text h2.title-change-one span {
-    font-size: 36px;
+    font-size: 22px;
   }
 }
 
@@ -25628,6 +25629,10 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
         font-size: 1rem;
         padding: 0 10px;
     }
+    .title-change-one span {
+  white-space: nowrap;
+  margin-left: 8px !important; /* or negative margin */
+}
     .client-slider-row {
     overflow: hidden;
     margin-bottom: 50px !important; /* 👈 Adjust the gap between rows here */
@@ -25776,4 +25781,8 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .client-logo:hover {
     transform: scale(1.1);
+}
+.title-change-one span {
+  white-space: nowrap;
+  margin-left: 20px; /* or negative margin */
 }
