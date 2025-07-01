@@ -16789,7 +16789,7 @@ a {
   transform: scale(1.2);
 }
 .swiper-banner-two-wrapper .swiper-button-prev {
-  top: 84%;
+  top: 77%;
 }
 @media only screen and (max-width: 767px) {
   .swiper-banner-two-wrapper .swiper-button-prev {
@@ -16801,7 +16801,7 @@ a {
   font-family: var(--font-3);
 }
 .swiper-banner-two-wrapper .swiper-button-next {
-  top: 90%;
+  top: 83%;
 }
 .swiper-banner-two-wrapper .swiper-button-next::after {
   content: "\f054";
@@ -16810,6 +16810,7 @@ a {
 
 .swiper-banner-two-wrapper .swiper-container-fade .swiper-slide {
   pointer-events: painted;
+  height: 100vh;
 }
 
 .bg-white-para {
@@ -17763,6 +17764,17 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 58px;
+}
+.contact-banner{
+  background-image: url(../images/banner/contact.jpg) !important;
+}
+.blog-banner{
+  background-image: url(../images/banner/blog.jpg) !important;
+
+}
+.protofilo-banncer{
+  background-image: url(../images/banner/portofilo.jpg) !important;
+
 }
 .service-banncer {
   background-image: url(../images/banner/servicehome.jpg) !important;
@@ -25616,6 +25628,10 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
         font-size: 1rem;
         padding: 0 10px;
     }
+    .client-slider-row {
+    overflow: hidden;
+    margin-bottom: 50px !important; /* 👈 Adjust the gap between rows here */
+}
 
     .team-image {
         max-width: 90%;
@@ -25712,4 +25728,52 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   display: flex; 
   justify-content: center;
 
+}
+
+
+.client-slider-row {
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.client-slider-track {
+    display: flex;
+    width: max-content;
+    transform: translateX(0);
+}
+
+.client-logo {
+    max-width: 240px;
+    margin: 0 50px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.client-logo:hover {
+    transform: scale(1.1);
+}
+
+.client-slider-track {
+    display: flex;
+    width: max-content;
+    transform: translateX(0);
+    will-change: transform;
+}
+
+.client-slider-row {
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.client-logo {
+    max-width: 240px;
+    margin: 0 50px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.100s;
+}
+
+.client-logo:hover {
+    transform: scale(1.1);
 }

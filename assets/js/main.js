@@ -1555,3 +1555,92 @@ document.querySelectorAll('#mobile-menu-active .main').forEach(link => {
 });
 
 
+
+
+
+ const section = document.querySelector('.rts-brand-area');
+    const tracks = section.querySelectorAll('.client-slider-track');
+    const speeds = 0.3; // Adjust scroll speed
+
+    let animationFrames = [];
+
+    tracks.forEach(track => {
+        let pos = 0;
+
+        function animate() {
+            pos -= speeds;
+            track.style.transform = `translateX(${pos}px)`;
+
+            // If full scroll done (half duplicated), reset
+            if (Math.abs(pos) >= track.scrollWidth / 2) {
+                pos = 0;
+            }
+
+            const frameId = requestAnimationFrame(animate);
+            animationFrames.push({ track, frameId });
+        }
+
+        // Store position and animation control
+        track.dataset.scrollPos = pos;
+        track.dataset.active = 'false';
+        track.animateScroll = animate;
+        track.stopScroll = () => {
+            const frameData = animationFrames.find(f => f.track === track);
+            if (frameData) cancelAnimationFrame(frameData.frameId);
+            animationFrames = animationFrames.filter(f => f.track !== track);
+        };
+    });
+
+    // Intersection Observer: Start scroll only when section visible
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                tracks.forEach(track => {
+                    if (track.dataset.active === 'false') {
+                        track.dataset.active = 'true';
+                        track.animateScroll();
+                    }
+                });
+            } else {
+                tracks.forEach(track => {
+                    track.dataset.active = 'false';
+                    track.stopScroll();
+                });
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    observer.observe(section);
+
+    // Pause when mouse enters center
+    section.addEventListener('mousemove', (e) => {
+        const rect = section.getBoundingClientRect();
+        const center = rect.top + rect.height / 2;
+        const mouseY = e.clientY;
+
+        if (Math.abs(mouseY - center) < 100) {
+            tracks.forEach(track => {
+                track.stopScroll();
+                track.dataset.active = 'false';
+            });
+        } else {
+            tracks.forEach(track => {
+                if (track.dataset.active === 'false') {
+                    track.dataset.active = 'true';
+                    track.animateScroll();
+                }
+            });
+        }
+    });
+
+    // Resume when mouse leaves section completely
+    section.addEventListener('mouseleave', () => {
+        tracks.forEach(track => {
+            if (track.dataset.active === 'false') {
+                track.dataset.active = 'true';
+                track.animateScroll();
+            }
+        });
+    });
