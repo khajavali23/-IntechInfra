@@ -1538,21 +1538,30 @@
 
 const currentPage = window.location.pathname.split("/").pop();
 
-// Highlight desktop nav menu
 document.querySelectorAll('.nav-link').forEach(link => {
     const href = link.getAttribute('href');
-    if (href === currentPage) {
+    if (currentPage.includes(href) || href.includes(currentPage)) {
         link.parentElement.classList.add('active');
     }
 });
 
-// Highlight mobile nav menu
 document.querySelectorAll('#mobile-menu-active .main').forEach(link => {
     const href = link.getAttribute('href');
-    if (href === currentPage) {
+    if (currentPage.includes(href) || href.includes(currentPage)) {
         link.parentElement.classList.add('active');
     }
 });
+
+
+document.querySelectorAll('.nav-link').forEach(link => {
+    const href = link.getAttribute('href');
+    if (
+        currentPage.includes("blog") && href.includes("blog") // matches blog2.html, blog-3.html etc.
+    ) {
+        link.parentElement.classList.add('active');
+    }
+});
+
 
 
 
@@ -1644,3 +1653,5 @@ document.querySelectorAll('#mobile-menu-active .main').forEach(link => {
             }
         });
     });
+
+    
