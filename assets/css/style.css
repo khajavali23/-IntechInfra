@@ -55,7 +55,7 @@
   --color-primary: #e57025;
   --color-secondary: #1F1F25;
   --color-body: #7D7D7D;
-  --color-heading-1: #30373E;
+  --color-heading-1: #45474b
   --color-white:#fff;
   --color-success: #3EB75E;
   --color-danger: #FF0003;
@@ -349,6 +349,7 @@ p {
   font-weight: var(--p-regular);
   color: var(--color-body);
   margin: 0 0 40px;
+  letter-spacing: 0.5px;
 }
 @media only screen and (max-width: 767px) {
   p {
@@ -15400,7 +15401,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
-  letter-spacing: -0.32px;
+  letter-spacing: 1px;
   opacity: 0;
 }
 @media only screen and (max-width: 575px) {
@@ -15417,6 +15418,7 @@ a {
   color: #fff;
   padding: 12px 32px;
   opacity: 1;
+      color: #e57126
 }
 .banner-twoa-rea-start .banner-inner-content-wrapper a.rts-btn i {
   margin-left: 8px;
@@ -17183,19 +17185,20 @@ a {
 }
 
 .rts-btn {
-  padding: 9px 36px;
-  min-width: max-content;
-  font-size: 16px;
-  border-radius: 4px;
-  display: inline-block;
-  max-width: max-content;
-  transition: 0.3s;
+    padding: 9px 36px;
+    min-width: max-content;
+    font-size: 16px;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: max-content;
+    transition: 0.3s;
+    color: #e57126;
 }
 .rts-btn:hover {
   transform: translateY(-3px) scale(1.02);
 }
 .rts-btn.btn-border {
-  border: 1px solid #88919B;
+  border: 1px solid #e57126;
 }
 .rts-btn.btn-primary {
   background: var(--color-primary) !important;
@@ -17593,12 +17596,11 @@ a {
   color: var(--color-primary);
 }
 .contact-information .information span {
-  display: block;
-  color: #7d7d7d;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+    color: #45474b;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
 }
 .contact-information .information a {
   color: #30373e;
@@ -17810,10 +17812,10 @@ a {
   color: var(--color-primary);
 }
 .breadcrumb-area-bg .bread-crumb-area-inner .breadcrumb-top a.active {
-  color: #ffffff;
+  color: #b1a892;
 }
 .breadcrumb-area-bg .bread-crumb-area-inner .bottom-title .title {
-  color: #fff;
+  color: #b1a892;
   text-align: center;
   font-size: 60px;
   font-style: normal;
@@ -18296,7 +18298,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
-  letter-spacing: -0.32px;
+ 
   margin-bottom: 24px;
 }
 .singe-serice-style-two .body .wrapper .inner a.arrow-btn-read-more {
@@ -18320,6 +18322,7 @@ a {
   padding: 40px;
   position: relative;
   transition: 0.3s;
+      background: #b1a89229
 }
 @media only screen and (max-width: 575px) {
   .single-service-style-three {
@@ -18376,6 +18379,7 @@ a {
   line-height: 26px;
   letter-spacing: -0.32px;
   margin-bottom: 20px;
+  letter-spacing: 0.5px;
 }
 .single-service-style-three .rts-read-more-3 {
   display: flex;
@@ -19398,6 +19402,7 @@ a {
   max-width: 42%;
   margin-bottom: 0;
   margin-top: 27px;
+  letter-spacing: 0.5px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .title-area-product-one p.disc {
@@ -21276,6 +21281,7 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
 .testimonials-style-two-wrapper .single-testimonials-style-two p.disc {
   margin-bottom: 25px;
   max-width: 82%;
+  letter-spacing: 0.1px;
 }
 @media only screen and (max-width: 575px) {
   .testimonials-style-two-wrapper .single-testimonials-style-two p.disc {
@@ -21677,6 +21683,7 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
   padding-bottom: 40px;
   margin-bottom: 0;
   margin-bottom: 24px;
+  letter-spacing: 0.5px;
 }
 @media only screen and (max-width: 575px) {
   .signle-blog-style-one .inner-content .title {
@@ -22700,7 +22707,7 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
-  letter-spacing: -0.32px;
+
 }
 
 .footer-two-main-wrapper-right {
@@ -22753,7 +22760,7 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
   margin-bottom: 23px;
 }
 .footer-two-main-wrapper-right .single-footer-wized .location p {
-  color: #30373E;
+  color: #45474b;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -23559,11 +23566,10 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
 
 .single-choose-style-two {
    display: flex;
-    gap: 19px;
-    padding: 17px 8px 17px 8px;
+    gap: 16px;
+    padding: 8px;
     border: 1px solid #E3E3E3;
     transition: 0.4s;
-    border-radius: 10px;
 }
 @media only screen and (max-width: 479px) {
   .single-choose-style-two {
@@ -23578,7 +23584,7 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  margin-bottom: 0px;
+  margin-bottom: 8px;
 }
 .single-choose-style-two .right-content p.disc {
   color: #7D7D7D;
@@ -25635,6 +25641,10 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
         font-size: 1rem;
         padding: 0 10px;
     }
+    .ourmisin___background {
+    background: #b1a89230 !important;
+    padding: 0px !important; 
+}
     .title-change-one span {
   white-space: nowrap;
   margin-left: 8px !important; /* or negative margin */
@@ -25656,12 +25666,13 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
     .contact__page{
   display: flex; 
   justify-content: flex-start !important;
-
-
 }
 .conatct_-detsials{
   margin-bottom: 60px !important;
 }
+.about__verson {
+    height: auto !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -25818,10 +25829,24 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 }
   .portofilo__footer{
     background: #b1a89245;
-    margin: 100px 0px;
+    
   }
 .blg__main__background{
       background: #b1a89245;
  
 
+}
+
+style attribute {
+    display: block;
+    text-align: left;
+    position: relative;
+    translate: none;
+    rotate: none;
+    scale: none;
+    transform: translate(0px, 0px);
+    letter-spacing: -5px !important;
+}
+.about__verson{
+  height: 40vh;
 }
